@@ -1,0 +1,7 @@
+{
+  "name": "Professional PdM & New Business Support Portfolio",
+  "description": "A high-conversion landing page for a freelance Product Manager and New Business Development expert, featuring case studies, services, and AI-integrated support capabilities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

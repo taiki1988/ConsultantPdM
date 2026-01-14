@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PdM × 新規事業開発パートナー | プロフェッショナル支援</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0A3D62',
+              cta: '#0070F3',
+              'cta-hover': '#0057C2',
+              accent: '#22D3EE',
+              neutralBg: '#F7F8FA',
+              textMain: '#333333',
+              textSub: '#666666',
+            },
+            fontFamily: {
+              sans: ['Noto Sans JP', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(24px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+      }
+      .scroll-mask {
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+      }
+      @keyframes infiniteScroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-infinite-scroll {
+        animation: infiniteScroll 30s linear infinite;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-neutralBg text-textMain antialiased">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
