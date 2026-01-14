@@ -49,10 +49,8 @@ const Hero: React.FC = () => {
           {/* メインコピー：色彩とサイズの動的バランス（文言維持） */}
           <h1 className="text-6xl md:text-[135px] font-black leading-[0.8] mb-14 tracking-tighter animate-fade-up">
             <span className="text-primary block mb-2">事業を</span>
-            <span className="relative inline-block text-cta">
+            <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary via-cta to-accent" style={{ lineHeight: '1.1', paddingTop: '0.05em', paddingBottom: '0.05em' }}>
               「構想」
-              {/* 物理的な「厚み」を感じさせるデコレーション */}
-              <span className="absolute -right-12 top-1/2 -translate-y-1/2 text-2xl text-primary/10 hidden md:block">01_STRATEGY</span>
             </span>
             <span className="text-primary block mt-2 tracking-[-0.05em]">
               終わらせない<span className="text-cta opacity-50">。</span>
@@ -77,12 +75,13 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center gap-14 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <a 
               href="#contact" 
-              className="group relative w-full sm:w-auto px-20 py-10 bg-primary text-white overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_50px_100px_rgba(0,112,243,0.2)]"
+              className="group relative px-12 py-6 bg-primary text-white font-black text-xl tracking-tight rounded-full overflow-hidden transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,112,243,0.3)] hover:-translate-y-1"
             >
-              <div className="absolute inset-0 bg-cta transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-              <span className="relative z-10 font-black text-2xl tracking-tight">無料相談を予約する</span>
-              {/* 右上の小さなアクセント */}
-              <div className="absolute top-2 right-2 w-2 h-2 bg-white/20 rounded-full"></div>
+              {/* ホバー時のグラデーション背景 */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* 微細な光の効果 */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              <span className="relative z-10">問い合わせる</span>
             </a>
             
             <div className="flex flex-col gap-1">

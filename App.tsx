@@ -98,7 +98,7 @@ const App: React.FC = () => {
                 <button 
                   className="group relative px-20 py-10 bg-cta text-white rounded-[2.5rem] font-black text-2xl shadow-[0_30px_70px_rgba(0,112,243,0.4)] hover:shadow-[0_40px_90px_rgba(0,112,243,0.5)] hover:-translate-y-2 transition-all duration-500"
                 >
-                  <span className="relative z-10 tracking-tight">無料相談を予約する</span>
+                  <span className="relative z-10 tracking-tight">面談を予約する</span>
                 </button>
                 <div className="flex flex-col items-center gap-3">
                   <div className="flex items-center gap-3 text-primary/40 font-black text-xs tracking-widest uppercase">
