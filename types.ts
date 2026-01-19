@@ -21,3 +21,15 @@ export interface PricingPlan {
   features: string[];
   recommended?: boolean;
 }
+
+export interface ProfileData {
+  title: string;
+  description: string;
+  image: string;
+  years: string;
+  yearsLabel: string;
+  strengths: {
+    title: string;
+    description: string;
+  }[];
+}

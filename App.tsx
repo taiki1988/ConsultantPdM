@@ -114,6 +114,9 @@ const App: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* API経由で取得するProfileセクション（テスト用） */}
+        <Profile dataUrl="/api/profile.json" />
       </main>
 
       <Footer />

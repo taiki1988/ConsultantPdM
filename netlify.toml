@@ -1,0 +1,15 @@
+[build]
+  # ビルドコマンド（Viteプロジェクト用）
+  command = "npm run build"
+  # ビルド出力ディレクトリ（Viteのデフォルト）
+  publish = "dist"
+
+# リダイレクト設定（SPA用：すべてのルートをindex.htmlにリダイレクト）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# カスタムドメイン設定
+[context.production.environment]
+  NODE_VERSION = "18"
