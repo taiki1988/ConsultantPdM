@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           <h1 className="text-6xl md:text-[135px] font-black leading-[0.8] mb-14 tracking-tighter animate-fade-up">
             <span className="text-primary block mb-2">事業を</span>
             <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary via-cta to-accent" style={{ lineHeight: '1.1', paddingTop: '0.05em', paddingBottom: '0.05em' }}>
-              「構想」
+              「構想」で
             </span>
             <span className="text-primary block mt-2 tracking-[-0.05em]">
               終わらせない<span className="text-cta opacity-50">。</span>
