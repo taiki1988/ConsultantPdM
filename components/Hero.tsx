@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 right-0 w-full lg:w-[48%] h-full z-0 hidden lg:block overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=2000" 
+          src="/images/hero-background.jpg" 
           alt="Modern Structure" 
           className="w-full h-full object-cover grayscale opacity-90 contrast-125 transition-transform duration-[10s] hover:scale-110"
         />
@@ -65,8 +65,8 @@ const Hero: React.FC = () => {
                 <span className="text-primary/60 block text-lg font-bold mb-4 uppercase tracking-[0.2em]">Our Domain</span>
                 大手企業からスタートアップ、研究機関まで。<br />
                 先端技術をビジネスに変え、<br />
-                <span className="text-primary font-black border-b-[6px] border-cta/10 pb-1">PMFから2.8億の資金調達</span>まで導いた実績で、<br />
-                貴社の新規事業を加速させます。
+                <span className="text-primary font-black border-b-[6px] border-cta/10 pb-1">新規ビジネスのPMFから資金調達</span>まで導いた<br />
+                実績で貴社の新規事業を加速させます。
               </p>
             </div>
           </div>

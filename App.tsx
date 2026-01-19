@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Services />
         
         {/* Why Choose Section - 高級感と構造美を強化 */}
-        <section className="py-40 bg-white overflow-hidden">
+        <section className="pt-16 pb-32 bg-white overflow-hidden">
           <div className="max-w-7xl mx-auto px-6">
             <div className="bg-primary rounded-[5rem] p-12 md:p-32 text-white flex flex-col lg:flex-row items-center gap-24 shadow-3xl relative overflow-hidden">
               {/* 背景のグラフィックレイヤー */}
@@ -34,14 +34,14 @@ const App: React.FC = () => {
                   <span className="text-accent font-black text-sm tracking-[0.4em] uppercase">Core Strength</span>
                 </div>
                 <h2 className="text-5xl md:text-7xl font-black leading-[1] mb-16 tracking-tighter">
-                  その新規事業に、<br />
-                  <span className="text-accent">「確信」</span>を。
+                  その事業に、<br />
+                  <span className="text-accent">「確信」</span>を
                 </h2>
                 <div className="space-y-16">
                   {[
-                    { t: "構想から「事業化」まで一気通貫", d: "コンサルティングに留まらず、プロダクト開発の現場に深く入り込み、事業が自走する仕組みを構築します。" },
-                    { t: "技術的理解を伴う意思決定", d: "AI、Web3、IoT。難解な技術要件を理解した上で、ビジネスインパクトを最大化するプロダクト仕様を定義します。" },
-                    { t: "大企業・スタートアップのハイブリッド", d: "Speeda R&D等の大規模事業から、2.8億調達のシード期まで。全フェーズの力学を熟知しています。" }
+                    { t: "構想から「事業化」まで", d: "コンサルティングに留まらず、プロダクト開発の現場に深く入り込み、事業が自走する仕組みを構築します。" },
+                    { t: "技術的理解を伴う意思決定", d: "AI、Web3、IoT。先端技術の要件を理解した上で、ビジネスインパクトを最大化するプロダクト仕様を定義します。" },
+                    { t: "大企業・スタートアップのハイブリッド", d: "上場企業の大規模事業から、シード期のスタートアップまで。全フェーズの力学を熟知しています。" }
                   ].map((item, i) => (
                     <div key={i} className="group relative pl-16 border-l border-white/10 hover:border-accent transition-colors">
                       <div className="absolute left-[-1px] top-0 w-[3px] h-0 bg-accent group-hover:h-full transition-all duration-500"></div>
@@ -61,9 +61,9 @@ const App: React.FC = () => {
                   
                   <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.5)] transform rotate-1 hover:rotate-0 transition-transform duration-1000">
                     <img 
-                      src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" 
+                      src="/images/hero-background.jpg" 
                       alt="Office Strategy" 
-                      className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
                   </div>
@@ -78,7 +78,7 @@ const App: React.FC = () => {
         <Pricing />
         
         {/* Final CTA - より洗練されたコンバージョンエリア */}
-        <section id="contact" className="py-40 bg-neutralBg">
+        <section id="contact" className="pt-16 pb-32 bg-neutralBg scroll-mt-20">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <div className="bg-white rounded-[5rem] p-12 md:p-32 border border-gray-100 shadow-[0_100px_200px_rgba(0,0,0,0.05)] relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-cta/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
@@ -95,15 +95,18 @@ const App: React.FC = () => {
               </p>
               
               <div className="flex flex-col items-center gap-10">
-                <button 
-                  className="group relative px-20 py-10 bg-cta text-white rounded-[2.5rem] font-black text-2xl shadow-[0_30px_70px_rgba(0,112,243,0.4)] hover:shadow-[0_40px_90px_rgba(0,112,243,0.5)] hover:-translate-y-2 transition-all duration-500"
+                <a 
+                  href="https://aiaffects.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative px-20 py-10 bg-cta text-white rounded-[2.5rem] font-black text-2xl shadow-[0_30px_70px_rgba(0,112,243,0.4)] hover:shadow-[0_40px_90px_rgba(0,112,243,0.5)] hover:-translate-y-2 transition-all duration-500 inline-block"
                 >
-                  <span className="relative z-10 tracking-tight">面談を予約する</span>
-                </button>
+                  <span className="relative z-10 tracking-tight">面談を相談する</span>
+                </a>
                 <div className="flex flex-col items-center gap-3">
                   <div className="flex items-center gap-3 text-primary/40 font-black text-xs tracking-widest uppercase">
                     <div className="w-8 h-[1px] bg-primary/20"></div>
-                    Response within 24 hours
+                    リンク先の問い合わせフォームからご連絡ください（24時間以内に返信します）
                     <div className="w-8 h-[1px] bg-primary/20"></div>
                   </div>
                 </div>

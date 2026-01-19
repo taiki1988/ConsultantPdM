@@ -12,6 +12,7 @@ export interface CaseStudy {
   results: string[];
   tags: string[];
   image: string;
+  url?: string;
 }
 
 export interface PricingPlan {

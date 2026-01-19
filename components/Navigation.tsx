@@ -5,9 +5,12 @@ const Navigation: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="text-2xl font-black text-primary tracking-tighter">
+        <a 
+          href="#" 
+          className="text-2xl font-black text-primary tracking-tighter hover:opacity-80 transition-opacity"
+        >
           CONSULTANT<span className="text-cta">.</span>PDM
-        </div>
+        </a>
         <nav className="hidden md:flex items-center space-x-8 font-medium">
           <a href="#services" className="hover:text-cta transition-colors">サービス</a>
           <a href="#cases" className="hover:text-cta transition-colors">実績</a>

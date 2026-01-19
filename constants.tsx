@@ -3,8 +3,8 @@ import React from 'react';
 import { Service, CaseStudy, PricingPlan } from './types';
 
 export const LOGOS = [
-  "AquaAge", "Pathfinder", "NewsPicks", "Speeda", "DENSO", "Canon", "MUFG", "UZABASE",
-  "AquaAge", "Pathfinder", "NewsPicks", "Speeda", "DENSO", "Canon", "MUFG", "UZABASE"
+  "AquaAge", "Pathfinder", "UZABASE", "Speeda", "DENSO", "Canon", "MUFG", "東京工業大学大学院",
+  "AquaAge", "Pathfinder", "UZABASE", "Speeda", "DENSO", "Canon", "MUFG", "東京工業大学大学院"
 ];
 
 export const SERVICES: Service[] = [
@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
   },
   { 
     title: '資金調達・補助金支援', 
-    desc: 'スタートアップのEquity調達（累計2.8億の実績）や、研究開発型補助金の獲得を見据えた事業計画策定をサポート。',
+    desc: 'スタートアップのEquity調達や、研究開発型補助金の獲得を見据えた事業計画策定をサポート。',
     icon: '💳'
   }
 ];
@@ -37,23 +37,24 @@ export const CASE_STUDIES: CaseStudy[] = [
     role: 'PdM / 事業責任者 / プロダクト統括',
     results: [
       '片道レンタカー「カタレン」のサービス立ち上げから統括',
-      '累計 約2.8億円の資金調達をリード',
+      '累計 約2.8億円の資金調達を実現するサービスの立ち上げとPMF',
       '日経トレンディ「スタートアップ大賞」優秀賞受賞'
     ],
     tags: ['Scaling', 'Funding', 'PdM'],
-    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800'
+    image: '/images/case-pathfinder.jpg',
+    url: 'https://prtimes.jp/main/html/rd/p/000000009.000067457.html?fbclid=IwAR2OiTVml1slJHfoqw3wmREgW8K9zs8IwzW0-CApilDHztO5GXDGnbqfStE'
   },
   {
     id: 'aquaage',
     company: 'AquaAge株式会社',
-    role: '新規事業企画 / AI × 空間ID × ドローン',
+    role: '新規事業企画  × 自律飛行 × ドローン',
     results: [
-      '空間IDを活用した物流自動化の事業構想策定',
+      '自律飛行ドローンを活用した物流自動化の事業構想策定',
       '研究開発型補助金獲得を見据えたR&D計画の立案',
       'PoC設計の確立と実行フェーズへの移行'
     ],
-    tags: ['AI', 'Spatial-ID', 'R&D'],
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=800'
+    tags: ['Drone', 'Usecase', 'R&D'],
+    image: '/images/case-aquaage.jpg'
   },
   {
     id: 'uzabase',
@@ -65,7 +66,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       '大手企業向けエンタープライズ営業チームの統括'
     ],
     tags: ['SaaS', 'Enterprise', 'GenAI'],
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800'
+    image: '/images/case-uzabase.jpg'
   }
 ];
 

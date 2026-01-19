@@ -4,11 +4,11 @@ import { CASE_STUDIES } from '../constants';
 
 const CaseStudies: React.FC = () => {
   return (
-    <section id="cases" className="py-24 bg-white">
+    <section id="cases" className="pt-16 pb-32 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-primary mb-4">実績詳細（ケーススタディ）</h2>
-          <p className="text-textSub font-medium">支援先の課題解決と確かな成果</p>
+          <h2 className="text-3xl md:text-5xl font-black text-primary mb-4">支援先（ケーススタディ）</h2>
+          <p className="text-textSub font-medium">課題解決と確かな成果を</p>
         </div>
 
         <div className="space-y-20">
@@ -18,20 +18,43 @@ const CaseStudies: React.FC = () => {
               className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
             >
               <div className="flex-1 w-full">
-                <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
-                  <img 
-                    src={item.image} 
-                    alt={item.company} 
-                    className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute top-6 left-6 flex flex-wrap gap-2">
-                    {item.tags.map(tag => (
-                      <span key={tag} className="px-3 py-1 bg-white/90 backdrop-blur-sm text-primary text-xs font-bold rounded-full">
-                        #{tag}
-                      </span>
-                    ))}
+                {item.url ? (
+                  <a 
+                    href={item.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block relative group overflow-hidden rounded-3xl shadow-2xl cursor-pointer"
+                  >
+                    <img 
+                      src={item.image} 
+                      alt={item.company} 
+                      className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute top-6 left-6 flex flex-wrap gap-2">
+                      {item.tags.map(tag => (
+                        <span key={tag} className="px-3 py-1 bg-white/90 backdrop-blur-sm text-primary text-xs font-bold rounded-full">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                  </a>
+                ) : (
+                  <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                    <img 
+                      src={item.image} 
+                      alt={item.company} 
+                      className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute top-6 left-6 flex flex-wrap gap-2">
+                      {item.tags.map(tag => (
+                        <span key={tag} className="px-3 py-1 bg-white/90 backdrop-blur-sm text-primary text-xs font-bold rounded-full">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               
               <div className="flex-1">

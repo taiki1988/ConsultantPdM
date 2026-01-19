@@ -4,7 +4,7 @@ import { PRICING } from '../constants';
 
 const Pricing: React.FC = () => {
   return (
-    <section id="pricing" className="py-24 bg-neutralBg">
+    <section id="pricing" className="pt-16 pb-32 bg-neutralBg scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-primary mb-4">料金プラン</h2>

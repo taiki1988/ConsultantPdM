@@ -2,17 +2,17 @@
 import React from 'react';
 import { SERVICES } from '../constants';
 
-// プロフェッショナルで抽象度の高い高品質イメージの選定（URLを最新の有効なものに更新）
+// プロフェッショナルで抽象度の高い高品質イメージの選定
 const SERVICE_IMAGES = [
-  "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200", // 事業構想: 洗練されたビジネス・プランニングの空気感
-  "https://images.unsplash.com/photo-1531403001835-4c9c94a73ade?auto=format&fit=crop&q=80&w=1200", // PdM: UI/UX設計とチームビルディング（信頼性の高いURL）
-  "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200", // AI: 先端技術・ネットワーク
-  "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200", // 資金調達: 近代的な建築と光（成長のメタファー）
+  "/images/service-01-business.jpg", // 事業構想: 洗練されたビジネス・プランニングの空気感
+  "/images/service-02-pdm.jpg", // PdM: UI/UX設計とチームビルディング
+  "/images/service-03-ai.jpg", // AI: 先端技術・ネットワーク
+  "/images/service-04-funding.jpg", // 資金調達: 近代的な建築と光（成長のメタファー）
 ];
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-32 bg-white relative overflow-hidden">
+    <section id="services" className="pt-16 pb-32 bg-white relative overflow-hidden scroll-mt-20">
       {/* 背景装飾 */}
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-cta/5 rounded-full blur-[120px] -translate-y-1/2"></div>
       
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   onError={(e) => {
                     // 万が一画像が読み込めない場合のフォールバック
-                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1200";
+                    (e.target as HTMLImageElement).src = "/images/fallback.jpg";
                   }}
                 />
                 {/* 
